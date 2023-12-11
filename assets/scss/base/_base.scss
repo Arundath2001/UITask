@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    border: 0;
+}
+svg{
+    &:hover{
+        transform: scale(1.05);
+        transition: .6s;
+        color: darkblue;
+    }
+}

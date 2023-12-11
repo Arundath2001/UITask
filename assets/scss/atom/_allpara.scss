@@ -1,0 +1,27 @@
+.allpara{
+    flex: 1;
+    &__para{
+        font-size: 16px;
+        color: white;
+    }
+    &--paranew{
+        color: rgb(132, 132, 132);
+        font-weight: 500;
+    }
+
+}
+@include mobile{
+    .allpara{
+        &__para{
+            font-size: 13px;
+        }
+    }
+}
+
+@include tablet{
+    .allpara{
+        &__para{
+            font-size: 13px;
+        }
+    }
+}

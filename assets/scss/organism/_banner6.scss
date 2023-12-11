@@ -1,0 +1,95 @@
+.banner6{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px;
+    &__down{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+    &__downcont2{
+        display: flex;
+        flex-direction: row;
+    }
+    &__downcont2cont1{
+            width: 2px;
+            background-color: lightgrey;
+    }
+    &__downcont3{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        p{
+            width: 350px;
+        }
+    }
+}
+
+@include mobile{
+    .banner6{
+        &__down{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+        &__downcont2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__downcont2cont1{
+            display: none;
+        }
+        &__downcont2cont2{
+            display: block;
+            height: 2px;
+            background-color: lightgrey;
+            width: 100%;
+            
+        }
+        &__downcont3{
+            align-items: center;
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .banner6{
+        &__down{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+        &__downcont2{
+            width: 100%;
+
+        }
+        &__downcont2{
+            display: flex;
+            flex-direction: column;
+        }
+        &__downcont2cont1{
+            display: none;
+        }
+        &__downcont2cont2{
+            display: block;
+            height: 2px;
+            background-color: lightgrey;
+            
+        }
+        &__downcont3{
+            align-items: center;
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

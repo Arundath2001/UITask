@@ -1,0 +1,16 @@
+.card1{
+    background-color: rgb(60, 110, 186);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    &--new{
+        background-color: white;
+        padding: 45px;
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: .5s;
+        border-radius: 10px;
+    }
+}

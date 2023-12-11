@@ -1,0 +1,22 @@
+.iconhead{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__para{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    color: white;
+    &--new{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        color: navy;
+        align-items: center;
+        p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    }
+}

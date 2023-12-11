@@ -1,0 +1,25 @@
+.banner1{
+    background: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+    &__cont{
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    button{
+        cursor: pointer;
+        color: navy;
+        font-weight: bolder;
+    }
+    button:hover{
+        border: 2px solid red;
+    }
+    .slide{
+        display: none;
+    }
+}
+

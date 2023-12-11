@@ -1,0 +1,27 @@
+.headwithline{
+    &__para{
+        font-size: 20px;
+        color: navy;
+        position: relative;
+        text-transform: uppercase;
+        position: static;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    &__line{
+        flex: 1;
+        height: 2px;
+        background-color: navy;
+        max-width: 350px;
+
+    }
+    &--linenew{
+        background-color: white;
+        max-width: 150px;
+    }
+    &--paranew{
+        color: white;
+    }
+}

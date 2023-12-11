@@ -1,0 +1,45 @@
+.download{
+    position: relative;
+    &__down{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        a{
+            background-color: navy;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: navy;
+        }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: -55px;
+    }
+    a:hover{
+        color: lightgreen;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+    img:hover{
+        transform: scale(1.06);
+        transition: .5s;
+    }
+}
+@include mobile{
+    .download{
+        &__down{
+            width: 200px;
+        }
+    }
+}

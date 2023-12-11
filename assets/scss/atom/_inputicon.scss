@@ -1,0 +1,22 @@
+.inputicon{
+    position: relative;
+    width: 330px;
+    input{
+        padding: 10px;
+        padding-right: 0px;
+        width: 100%;
+        border: 2px solid lightgrey;
+    }
+    svg{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: lightseagreen ;
+      }
+}
+@include mobile{
+    .inputicon{
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.imagetext{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    img{
+        width: 30px;
+    }
+    p{
+        font-weight: 500;
+    }
+}

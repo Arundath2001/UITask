@@ -1,0 +1,41 @@
+.b6input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__cont1{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+    &__cont1sub1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__cont1sub2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    a{
+        svg{
+            fill: white;
+        }
+    }
+    
+}
+@include mobile{
+    .b6input{
+        &__cont1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__cont2{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+}

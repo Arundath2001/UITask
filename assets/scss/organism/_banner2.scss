@@ -1,0 +1,31 @@
+.banner2{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    background-color: rgb(197, 245, 231);
+    justify-content: space-between;
+    &__left{
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@include mobile{
+    .banner2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@include tablet{
+    .banner2{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+}

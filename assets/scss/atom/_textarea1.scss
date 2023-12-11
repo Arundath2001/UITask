@@ -1,0 +1,16 @@
+.textarea1{
+    position: relative;
+    max-width: 670px;
+    textarea{
+        width: 100%;
+        padding: 10px;
+        border: 2px solid lightgrey;
+    }
+    svg{
+        position: absolute;
+        top: 30%;
+        transform: translateY(-70%);
+        right: 0;
+        fill: lightseagreen;
+    }
+}

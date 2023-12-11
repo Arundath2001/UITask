@@ -1,0 +1,44 @@
+.card1main{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 35px;
+    p{
+        max-width: 450px;
+    }
+    &__top{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+    &__down{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+}
+
+@include mobile{
+    .card1main{
+        display: flex;
+        flex-direction: column;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+        &__down{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+    
+}
+
+@include tablet{
+    .card1main{
+        display: flex;
+        flex-direction: column;
+    }
+}

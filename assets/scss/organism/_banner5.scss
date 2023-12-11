@@ -1,0 +1,48 @@
+.banner5{
+    padding: 35px;
+    background-color: rgb(216, 249, 216);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &__top{
+        text-align: center;
+    }
+    &__down{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    &__downcont{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@include mobile{
+    .banner5{
+        &__down{
+            display: flex;
+            flex-direction: column;
+        }
+        &__downcont{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@include tablet{
+    .banner5{
+        align-items: center;
+        &__down{
+            display: flex;
+            flex-direction: column;
+        }
+        &__downcont{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+.banner3{
+    background-color: rgb(25, 25, 78);
+    padding: 35px;
+    height: 400px;
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+    }
+    &__topcont1{
+        max-width: 500px;
+    }
+
+
+}
+
+@include mobile{
+    .banner3{
+        height: 100%;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+@include tablet{
+    .banner3{
+        height: 100%;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
